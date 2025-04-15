@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overscroll-behavior: smooth;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(214, 207, 141, 0.711);
+  background: url(./asstes/e\ back\ 1.jpg) no-repeat center;
+  background-size: cover;
+
+  
+
+  .nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* backdrop-filter: blur(20px); */
+    background-color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.507);
+    margin-bottom: 2rem;
+    cursor:default;
+    color: #000000;
+    /* position: fixed;
+    z-index: 100; */
+    .nav-items a {
+      padding: 2vw;
+      text-decoration: none;
+      font-weight: 500;
+      color: #000000;
+      font-size: 1.2vw;
+    }
+    .left{
+      a{
+      font-size: 2rem;
+      margin-right: 2vw;
+
+      }
+    }
+  }
+
+  /* slider content */
+  .content {
+    width: 100%;
+    height: calc(100vh -  70px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* title */
+    .title {
+      width: 70%;
+      height: 400px;
+      color: white;
+      margin-left: 5vw;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      animation: autoRun1 4s linear  ;
+
+      h1 {
+        font-size: 5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+      }
+
+      button {
+        background-color: #f18e24;
+        padding: 15px 35px;
+        border-radius: 25px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    /* slider container */
+
+    .event-slider {
+      width: 59%;
+      height: 70vh;
+      overflow: visible;
+      display: flex;
+      align-items: center;
+      overflow-y: hidden;
+      justify-self: end;
+
+      .box-container {
+        width: 350px;
+        height: 400px;
+        position: relative;
+        border-radius: 25px;
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        animation: autoRun 10s linear infinite ;
+
+
+        .slide-info {
+          width: 300px;
+          height: 400px;
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: self-start;
+          position: absolute;
+          bottom: 0;
+          color: #fff;
+        /* animation: autoRun 1s linear infinite ; */
+
+          h2 {
+            color: #ffffff97;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .box {
+        width: 300px;
+        height: 400px;
+        overflow: hidden;
+        flex-shrink: 0;
+        border-radius: 25px;
+        object-fit: cover;
+        margin-bottom: 10px;
+        position: relative;
+        /* animation: autoRun 1s linear infinite ; */
+
+
+        img {
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+          transition: all 0.3s ease;
+        }
+
+        img:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes autoRun {
+  form{
+    transform: translateX(-500%);
+  }
+  to{
+    transform: translateX(-100%);
+
+  }
+}
+
+/* section 2 BGI  */
+.sec {
+  width: 100%;
+  height: 70vh;
+  background-color: #333;
+  background: url(./asstes/SEC\ 2\ BACK.jpg);
+  padding: 3.2rem 0 4rem 4rem;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  /* slider */
+  .bgi-evets {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow-y: hidden;
+  }
+  .bgi-box-container {
+    width: 450px;
+    height: 400px;
+    margin-left: 2rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    border-radius: 15px;
+  }
+
+  /* boxes */
+  .ebox {
+    width: 450px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    background-color: #fff;
+    flex-shrink: 0;
+
+    a {
+      width: 100%;
+      height: 50%;
+      object-fit: inherit;
+      img {
+        width: 100%;
+        height: 50%;
+        object-fit: inherit;
+        border-radius: 15px 15px 0 0;
+        transition: all 0.3s ease;
+      }
+    }
+    img:hover {
+      border-radius: 15px 15px 0 0;
+      transform: scale(1.1);
+    }
+
+    .eboox-title {
+      margin: 10px;
+      padding: 15px;
+      span {
+        font: 10px rgb(0, 0, 0);
+        color: #060505db;
+      }
+      h2 {
+        font-size: 2.5rem;
+        margin: 10px 0 10px 0;
+        color: #2a937b;
+      }
+      p {
+        font-size: 15px;
+        margin: 10px 0 10px 0;
+        color: #333;
+      }
+      a {
+        button {
+          padding: 8px 16px;
+          border: none;
+          border-radius: 25px;
+          background-color: #f18e24;
+          color: #fff;
+          /* font-weight: 600; */
+          font-size: 16px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/* sec 3 WORL WIDE */
+
+.sec2 {
+  background-image: none;
+  /* border-top: 3px solid black; */
+  background-color: #2a937b;
+  h2 {
+    color: #fff;
+  }
+  .slider-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+
+    .ad-slide {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-right: 2rem;
+      flex-shrink: 0;
+
+      .slide-no {
+        position: absolute;
+        width: 100px;
+        height: 400px;
+        flex-shrink: 0;
+        z-index: 1;
+
+        h1 {
+          font-size: 18rem;
+          text-align: start;
+          color: #00d8cc;
+          font-family: BasicAbuDhabi-Regular Arial sans-serif;
+        }
+      }
+
+      /* slider container */
+      .overlay {
+        flex-shrink: 0;
+        z-index: 10;
+        width: 300px;
+        height: 400px;
+        position: absolute;
+        left: 12vh;
+
+        .slide-image {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          object-fit: inherit;
+          border-radius: 20px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .slide-information {
+          width: 100%;
+          height: 100%;
+          padding: 10px;
+          top: 0;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .slide-information-top {
+            display: flex;
+            justify-content: space-between;
+            button {
+              border: none;
+              border-radius: 5px;
+              padding: 3px 6px;
+              font-weight: 500;
+              background-color: #fff;
+              cursor: pointer;
+            }
+          }
+
+          .slide-information-bottom {
+            color: #fff;
+            span {
+              font-size: 14px;
+              color: #ffffffee;
+            }
+            h3 {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (width<=1000px) and (width>=500px) {
+  .main {
+    height: 700px;
+    .nav {
+      width: 100%;
+      height: 60px;
+
+      .nav-items a {
+        font-size: 1.2rem;
+      }
+    }
+
+    & .content {
+      .event-slider {
+        height: 500px;
+      }
+    }
+  }
+
+  .sec {
+    height: 553px;
+
+    .bgi-box-container {
+      width: 550px;
+      margin-left: 1rem;
+      .ebox {
+        width: 550px;
+      }
+    }
+  }
+}
+
+/* art and calture */
+.sec-art {
+  background-image: url(./asstes/SEC\ 2.1\ BACK.jpg);
+}
+
+/* footer */
+
+.footer-container {
+  width: 100%;
+  height: 300px;
+  background-color: #333; 
+  padding: 4vw;
+
+  .footer-content{
+    width: 100%;
+    height: 100%;
+    /* background-color: #00d8cc; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .f-right{
+      width: 30%;
+      height: 100%;
+      /* background-color: #fff; */
+
+      h1{
+        color: #fff;
+        margin-bottom: 2rem;
+
+      }
+      p{
+        font-size: 14px;
+        line-height: 1.2rem;
+        color: #ffffff8f;
+
+      }
+    }
+    .f-left{
+      width: 30%;
+      height: 100%;
+      h1{
+        margin-bottom: 2rem;
+        color: #fff;
+        
+
+      }
+      .social-media{
+        a i{
+          font-size: 2.4rem;
+          text-decoration: none;
+          color: #ffffff93;
+          padding-right: 1.5rem;
+         
+          
+        }i:hover{
+          font-size: 2.6rem;
+  
+        }
+
+      
+       
+      }
+     
+    }
+
+
+  }
+}
+
+
+
+@media (max-width:400px)  {
+  
+  .main {
+    height: 700px;
+    background-image: none;
+  }
+
+}
