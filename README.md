@@ -21,7 +21,8 @@ It offers users a simple and elegant way to explore upcoming events, from cultur
 ---
 
 ## 📸 Screenshots
-*(Insert screenshots here to show the homepage and event listing)*
+![interface](https://github.com/user-attachments/assets/ed3bee4a-7057-4f87-959e-4c5562310ce0)
+
 
 ---
 
